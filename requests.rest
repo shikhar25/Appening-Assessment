@@ -1,0 +1,33 @@
+GET http://localhost:3000/posts
+Authorization:: Bearer
+
+
+###
+
+DELETE http://localhost:3000/logout
+Content-Type: application/json
+
+{
+    "token": 
+}
+
+
+###
+POST http://localhost:3000/token
+Content-Type: applicaton/json
+
+{
+    "token": ""
+}
+
+
+###
+
+POST http://localhost:3000/login
+Content_Type: application/json
+
+{
+    "name": "Nitin",
+    "password": "hash1usingpasscodejs",
+    "role": "admin"
+}
